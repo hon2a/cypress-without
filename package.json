@@ -1,0 +1,39 @@
+{
+  "name": "@wisersolutions/cypress-without",
+  "version": "0.0.0",
+  "description": " command for Cypress (https://www.cypress.io) for breaking out of a  inside custom commands",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WiserSolutions/cypress-without"
+  },
+  "author": "Wiser Solutions, Inc.",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "files": [
+    "/es",
+    "/lib"
+  ],
+  "scripts": {
+    "format": "prettier --write \"src/**/*.js\" --loglevel warn",
+    "lint": "eslint -f @wisersolutions/eslint-formatter-idea ./src",
+    "test": "jest 'src/'",
+    "build": "transpile-js",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@wisersolutions/eslint-config": "^1.0.4",
+    "@wisersolutions/eslint-formatter-idea": "^1.0.3",
+    "@wisersolutions/transpile-js": "^0.0.3",
+    "babel-eslint": "^9.0.0",
+    "babel-jest": "^23.6.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^3.6.0",
+    "eslint-plugin-react": "^7.13.0",
+    "jest": "^23.6.0",
+    "prettier": "^1.17.1"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.4.5"
+  }
+}
