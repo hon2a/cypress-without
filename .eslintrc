@@ -1,11 +1,9 @@
 {
   "extends": "@wisersolutions",
-  "overrides": [
-    {
-      "files": ["src/**/*.test.js"],
-      "env": {
-        "jest": true
-      }
-    }
-  ]
+  "plugins": [
+    "cypress"
+  ],
+  "env": {
+    "cypress/globals": true
+  }
 }
