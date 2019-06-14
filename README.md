@@ -4,7 +4,35 @@
 
 ## Use
 
-Add a usage guide...
+Either import and use the command directly as a plain function:
+
+```javascript
+import { without } from '@wisersolutions/cypress-without'
+
+cy.get('.some-container').within(() => {
+  // ... find elements inside the container only
+  without(() => {
+    // ... find elements anywhere (e.g. drop-downs rendered through portals)
+  })
+  // ... find more elements just inside the container
+})
+```
+
+Or register the command with Cypress and chain it off `cy`:
+
+```javascript
+import '@wisersolutions/cypress-without/lib/register' // best done just once in your support script
+
+cy.get('.some-container').within(() => {
+  // ... find elements inside the container only
+  cy.without(() => {
+    // ... find elements anywhere (e.g. drop-downs rendered through portals)
+  })
+  // ... find more elements just inside the container
+})
+```
+
+Provide `{ log: false }` as the second argument to mute the log output.
 
 ## Development
 
