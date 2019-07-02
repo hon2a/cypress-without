@@ -4,6 +4,8 @@
 
 ## Use
 
+### `without`
+
 Either import and use the command directly as a plain function:
 
 ```javascript
@@ -33,6 +35,19 @@ cy.get('.some-container').within(() => {
 ```
 
 Provide `{ log: false }` as the second argument to mute the log output.
+
+### `absoluteRoot`
+
+If you need to chain off the document root rather than perform a one-off action
+on it, use `absoluteRoot` to get the root.
+
+```javascript
+import { absoluteRoot } from '@wisersolutions/cypress-without'
+
+export const getActiveModal = () => absoluteRoot().find('.some-modal:visible')
+```
+
+This helper also gets registered as Cypress command when importing `…/register` (see above).
 
 ## Development
 
