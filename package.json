@@ -27,7 +27,7 @@
     "@wisersolutions/eslint-formatter-idea": "^1.0.3",
     "@wisersolutions/transpile-js": "^0.0.3",
     "babel-eslint": "^9.0.0",
-    "cypress": "^3.3.1",
+    "cypress": "^3.3.2",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^3.6.0",
     "eslint-plugin-cypress": "^2.2.1",
