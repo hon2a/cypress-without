@@ -1,9 +1,6 @@
 {
-  "extends": "@wisersolutions",
-  "plugins": [
-    "cypress"
-  ],
-  "env": {
-    "cypress/globals": true
-  }
+  "extends": [
+    "@wisersolutions",
+    "@wisersolutions/eslint-config/cypress"
+  ]
 }
