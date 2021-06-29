@@ -4,7 +4,7 @@
   "description": " command for Cypress (https://www.cypress.io) for breaking out of a  inside custom commands",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WiserSolutions/cypress-without"
+    "url": "git+https://github.com/hon2a/cypress-without"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
