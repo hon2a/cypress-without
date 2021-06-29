@@ -9,7 +9,7 @@
 Either import and use the command directly as a plain function:
 
 ```javascript
-import { without } from '@wisersolutions/cypress-without'
+import { without } from '@hon2a/cypress-without'
 
 cy.get('.some-container').within(() => {
   // ... find elements inside the container only
@@ -23,7 +23,7 @@ cy.get('.some-container').within(() => {
 Or register the command with Cypress and chain it off `cy`:
 
 ```javascript
-import '@wisersolutions/cypress-without/lib/register' // best done just once in your support script
+import '@hon2a/cypress-without/lib/register' // best done just once in your support script
 
 cy.get('.some-container').within(() => {
   // ... find elements inside the container only
@@ -42,7 +42,7 @@ If you need to chain off the document root rather than perform a one-off action
 on it, use `absoluteRoot` to get the root.
 
 ```javascript
-import { absoluteRoot } from '@wisersolutions/cypress-without'
+import { absoluteRoot } from '@hon2a/cypress-without'
 
 export const getActiveModal = () => absoluteRoot().find('.some-modal:visible')
 ```
