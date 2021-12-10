@@ -16,25 +16,24 @@
   ],
   "scripts": {
     "format": "prettier --write \"src/**/*.js\" --loglevel warn",
-    "lint": "eslint -f @wisersolutions/eslint-formatter-idea ./src",
+    "lint": "eslint -f @hon2a/eslint-formatter-idea ./src",
     "test": "cypress run",
     "tdd": "cypress open",
     "build": "transpile-js",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@wisersolutions/eslint-config": "^2.0.6",
-    "@wisersolutions/eslint-formatter-idea": "^1.0.8",
-    "@wisersolutions/transpile-js": "^0.0.19",
-    "babel-eslint": "^10.0.3",
-    "cypress": "^3.7.0",
-    "eslint": "^6.7.1",
-    "eslint-config-prettier": "^6.7.0",
-    "eslint-plugin-cypress": "^2.7.0",
-    "eslint-plugin-react": "^7.16.0",
-    "prettier": "^1.19.1"
+    "@hon2a/eslint-formatter-idea": "1.0.9",
+    "@hon2a/transpile-js": "0.2.1",
+    "babel-eslint": "10.1.0",
+    "cypress": "9.1.1",
+    "eslint": "8.4.1",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-cypress": "2.12.1",
+    "eslint-plugin-react": "7.27.1",
+    "prettier": "2.5.1"
   },
   "dependencies": {
-    "@babel/runtime": "^7.5.5"
+    "@babel/runtime": "7.16.3"
   }
 }
