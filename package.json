@@ -10,9 +10,11 @@
   "license": "MIT",
   "main": "./lib/index.js",
   "module": "./es/index.js",
+  "types": "./index.d.ts",
   "files": [
     "/es",
-    "/lib"
+    "/lib",
+    "/index.d.ts"
   ],
   "scripts": {
     "format": "prettier --write \"src/**/*.js\" --loglevel warn",
