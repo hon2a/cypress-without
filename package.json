@@ -1,6 +1,6 @@
 {
   "name": "@hon2a/cypress-without",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": " command for Cypress (https://www.cypress.io) for breaking out of a  inside custom commands",
   "repository": {
     "type": "git",
