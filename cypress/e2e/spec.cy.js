@@ -1,4 +1,4 @@
-import { absoluteRoot, without } from '../../src'
+import { absoluteRoot, without } from '../../index'
 
 beforeEach(() => {
   cy.visit('cypress/fixtures/index.html')
